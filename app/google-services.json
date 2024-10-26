@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "453223173442",
+    "project_id": "tagged-c01b5",
+    "storage_bucket": "tagged-c01b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453223173442:android:edc23c07c3427e36d30cdb",
+        "android_client_info": {
+          "package_name": "com.cjlab.taggedgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453223173442-v3110kfpidno20331gae75dnaa63nnkv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwkD4vu-JPXIN3h89ygBEz0JR92qXbcHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453223173442-v3110kfpidno20331gae75dnaa63nnkv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

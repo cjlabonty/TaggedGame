@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MapsActivity" >
+
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    <Button
+            android:id="@+id/button"
+            android:onClick="sendTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/map"
+            android:layout_marginBottom="5dp"
+            android:text="Send Tag"/>
+    <Button
+            android:id="@+id/endround"
+            android:onClick="endRound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Round"
+            android:layout_alignBottom="@+id/map"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"/>
+    <Button
+            android:id="@+id/taghalf"
+            android:onClick="tagNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/map"
+            android:text="Tag Half"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"/>
+    <TextView
+            android:text=""
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"/>
+    <TextView
+            android:text="X/X"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/players"/>
+    <ImageView
+            android:src="@drawable/screenside"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleY="50"
+            android:id="@+id/leftbar"/>
+    <ImageView
+            android:src="@drawable/screenside"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleY="50"
+            android:id="@+id/rightbar"/>
+    <ImageView
+            android:src="@drawable/bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleX="50"
+            android:id="@+id/topbar"/>
+    <ImageView
+            android:src="@drawable/bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleX="50"
+            android:id="@+id/bottombar"/>
+<!--    <ImageView-->
+<!--            android:src="@drawable/statusbar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:scaleX="4"-->
+<!--            android:scaleY="3"-->
+<!--            android:id="@+id/statusbar"/>-->
+
+    <!--    <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:text="Speed"-->
+<!--            android:gravity="center"-->
+<!--            android:ems="10"-->
+<!--            android:id="@+id/textSpeed"-->
+<!--            android:layout_alignTop="@+id/map"-->
+<!--            android:layout_centerHorizontal="true"/>-->
+</RelativeLayout>
